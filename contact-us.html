@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Mar 29 2021 14:45:25 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Mar 30 2021 21:01:01 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="605127bdea0aa455d76fac0c" data-wf-site="6047d3daa589377e718b46ce">
 
 <head>
@@ -28,7 +28,7 @@
     WebFont.load({
       google: {
         families: ["Droid Serif:400,400italic,700,700italic", "Droid Sans:400,700", "Noto Serif:regular,700",
-          "Karla:regular,600"
+          "Karla:regular,600,700,800"
         ]
       }
     });
@@ -44,21 +44,31 @@
   </script>
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-192864550-1"></script>
-  <script type="text/javascript">
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-192864550-1', {
-      'anonymize_ip': false
-    });
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TNCLJTN');
   </script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body class="body-2">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNCLJTN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div>
     <div class="w-layout-grid grid-4">
       <h1 id="w-node-_5107e8aa-fa0f-aba5-d4e8-5c7930cc88ae-d76fac0c" class="logo">
@@ -69,7 +79,7 @@
     </div>
   </div>
   <div class="form-block w-form">
-    <form id="email-form" name="email-form" action="https://api.nametag.work/forms/contact_us" method="post"
+    <form id="email-form" name="email-form" action="https://api.nametag.work/forms/contact_us" method="POST"
       data-redirect="www.nametag.work" class="form"><label class="field-label-3">contact us</label><label for="name"
         class="field-label">name</label><input type="text" class="text-field w-input" maxlength="256" name="name"
         data-name="Name" placeholder="" id="name"><label for="email" class="field-label-2">email</label><input
@@ -92,14 +102,14 @@
   <div class="section-8"></div>
   <div>
     <div class="w-layout-grid grid-6">
-      <div id="w-node-d951024b-d610-4d58-108f-0179f0dcbac4-d76fac0c" class="text-block-24">© 2021 nametag</div>
       <a id="w-node-d951024b-d610-4d58-108f-0179f0dcbac6-d76fac0c"
         href="https://www.notion.so/joinnametag/Best-practices-to-build-remote-culture-b89232fe42664682a9f5fab87a0e29bf"
         target="_blank" class="button-6 blog w-button">Blog</a>
       <a id="w-node-d951024b-d610-4d58-108f-0179f0dcbac8-d76fac0c"
         href="https://www.notion.so/joinnametag/nametag-Privacy-Policy-20fca902b3c44aeabd941de48f995ea8" target="_blank"
         class="button-6 w-button">Privacy Policy</a>
-      <a id="w-node-d951024b-d610-4d58-108f-0179f0dcbaca-d76fac0c" href="support"
+      <div id="w-node-d951024b-d610-4d58-108f-0179f0dcbac4-d76fac0c" class="text-block-24">© 2021 nametag</div>
+      <a id="w-node-d951024b-d610-4d58-108f-0179f0dcbaca-d76fac0c" href="support.html"
         class="button-6 blog w-button">Support</a>
     </div>
   </div>
