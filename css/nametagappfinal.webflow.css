@@ -1571,7 +1571,7 @@ a {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: normal;
-  white-space: break-spaces;
+  /* white-space: break-spaces; */
   -o-object-fit: contain;
   object-fit: contain;
 }
