@@ -2833,7 +2833,7 @@ a {
     font-size: 16px;
     line-height: 22px;
     text-transform: none;
-    white-space: break-spaces;
+    /* white-space: break-spaces; */
     -o-object-fit: scale-down;
     object-fit: scale-down;
   }
