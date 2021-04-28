@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Apr 28 2021 05:39:42 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Wed Apr 28 2021 14:30:05 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="607751bb82c34305dae0deea" data-wf-site="607751bb82c34317b0e0dee3">
 
 <head>
@@ -44,30 +44,21 @@
   </script>
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TNCLJTN');
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-192864550-1"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-192864550-1', {
+      'anonymize_ip': false
+    });
   </script>
-  <!-- End Google Tag Manager -->
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNCLJTN" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
   <div>
     <div data-collapse="medium" data-animation="over-right" data-duration="400" role="banner" class="navbar w-nav">
       <div class="container-2 w-container">
@@ -88,7 +79,7 @@
     </div>
   </div>
   <div class="form-block w-form">
-    <form id="email-form" name="email-form" action="https://api.nametag.work/forms/support" method="post"
+    <form id="email-form" name="email-form" data-name="Email Form" redirect="www.nametag.work"
       data-redirect="www.nametag.work" class="form"><label class="field-label-3">contact support</label><label
         for="name" class="field-label">name</label><input type="text" class="text-field w-input" maxlength="256"
         name="name" data-name="Name" placeholder="" id="name"><label for="email"

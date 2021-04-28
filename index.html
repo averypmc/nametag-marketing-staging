@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Apr 28 2021 05:39:42 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Wed Apr 28 2021 14:30:05 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="607751bb82c3434bc6e0dee4" data-wf-site="607751bb82c34317b0e0dee3">
 
 <head>
@@ -44,30 +44,21 @@
   </script>
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TNCLJTN');
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-192864550-1"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-192864550-1', {
+      'anonymize_ip': false
+    });
   </script>
-  <!-- End Google Tag Manager -->
 </head>
 
 <body class="body">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNCLJTN" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
   <div>
     <div data-collapse="medium" data-animation="over-right" data-duration="400" role="banner" class="navbar w-nav">
       <div class="container-2 w-container">
@@ -103,14 +94,13 @@
       <div data-w-id="875ad311-c555-3f27-8bee-1d0b216abc7a"
         style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
         class="share-with-team w-form">
-        <form id="email-form" name="email-form" action="https://api.nametag.work/forms/share" method="post"
-          class="form-2">
+        <form id="email-form" name="email-form" data-name="Email Form" class="form-2">
           <div class="share-with-team-hero">
             <div class="text-block-34">share with your team</div>
           </div><label class="field-label-11">your info</label>
           <div class="columns-8 w-row">
             <div class="w-col w-col-6"><label for="Name" class="field-label-6">name</label><input type="text"
-                class="text-field-4 w-input" maxlength="256" name="name" data-name="Name" placeholder="enter your name"
+                class="text-field-4 w-input" maxlength="256" name="Name" data-name="Name" placeholder="enter your name"
                 id="Name" required=""></div>
             <div class="w-col w-col-6"><label for="email" class="field-label-7">email</label><input type="email"
                 class="text-field-5 w-input" maxlength="256" name="email" data-name="Email"
@@ -119,15 +109,18 @@
             info</label>
           <div class="columns-9 w-row">
             <div class="w-col w-col-6"><label for="Name-2" class="field-label-6">name</label><input type="text"
-                class="text-field-4 alt w-input" maxlength="256" name="admin_name" data-name="Field 2"
+                class="text-field-4 alt w-input" maxlength="256" name="field-2" data-name="Field 2"
                 placeholder="enter admin&#x27;s name (optional)" id="field-2"></div>
             <div class="w-col w-col-6"><label class="field-label-7">email</label><input type="text"
-                class="text-field-5 alt w-input" maxlength="256" name="admin_email" data-name="Field 2"
+                class="text-field-5 alt w-input" maxlength="256" name="field-2" data-name="Field 2"
                 placeholder="enter admin&#x27;s email (optional)" id="field-2"></div>
           </div><label class="field-label-8 bold"></label><label class="field-label-11">content of message</label>
           <div class="text-block-36">we&#x27;ll reach out to the Slack admin with a personalized version of the message
             below, or you can copy it to share on your own.</div>
-          <div id="copy-message" class="text-block-35">nametag is a Slack app that sets up quality 1:1 pairings for team bonding. I think it could help our team get to know each other better and create space for informal communication. <br><br>While other apps match people randomly, nametag creates better connections through warm intros. More info at www.nametag.work. What do you think?</div>
+          <div id="copy-message" class="text-block-35">nametag is a Slack app that sets up quality 1:1 pairings for team
+            bonding. I think it could help our team get to know each other better and create space for informal
+            communication. <br><br>While other apps match people randomly, nametag creates better connections through
+            warm intros. More info at www.nametag.work. What do you think?</div>
           <a data-clipboard-target="#copy-message" href="#" class="copy-btn w-button"> copy</a><input type="submit"
             value="submit" data-wait="Please wait..." class="button-2 w-button">
         </form>
@@ -174,7 +167,8 @@
   <div>
     <div id="features_section" class="w-layout-grid grid-3 section-2">
       <div id="w-node-_8047ed2d-947f-9967-97cf-baed3e23e989-c6e0dee4" class="text-block-28">every Friday, receive a
-        weekly update of new people you direct messaged.<br><br>link about me<strong> </strong>profiles and schedule 1:1s with 1-click.</div>
+        weekly update of new people you direct messaged.<br><br>link about me<strong> </strong>profiles and schedule
+        1:1s with 1-click.</div>
       <div id="w-node-_74851627-e3c0-cd8f-295b-f78fa8c21bc0-c6e0dee4" class="text-block-29">customize hours you prefer
         to meet. <br><br>we&#x27;ll automatically adjust to your current time zone, even if you&#x27;re working from
         somewhere new.</div><img src="images/screen-1.svg" loading="lazy"
